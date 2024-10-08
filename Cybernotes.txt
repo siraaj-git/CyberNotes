@@ -1,0 +1,72 @@
+|CyberSecurity Notes|
+---------------------
+
+|Navigation in Linux|
+---------------------
+cd: Changes your current directory. To use it type: "cd path/to/directory" Typing "cd" or "cd~" will go to the home directory and "cd.." will go back one directory.
+ls: This command lists the contents of the directory you are in. Typing "ls -l" will display detailed listing and "ls -a" will show hidden files.
+pwd: Prints the current directory your in, e.g. if you're in the "home/siraaj/Documents/" directory it will print out "home/siraaj/Documents"
+mkdir: Creates a new directory, to use it type: "mkdir [directory name]"
+rmdir: Removes any EMPTY directory, to use it type: "rmdir [directory name]"
+mv: Moves a file to a specefied directory, to use it type: "mv yourfile.txt destination/of/file" Another use is to rename it by typing: "mv oldname.txt newname.txt"
+rm: Removes a file or directory, to use it type: "rm yourfile.txt" Another use is "rm -r" which deletes a specific directory and its contents, "rm -f" which removes file without confirmation.
+
+|Networking|
+------------
+IP address (IPv4): An IP address is what is used by devices to connect and communicate with each other. IPv4 is a type of IP address which has 4 sets of number each separated by a period, e.g., 123.456.7.8.
+
+Subnet Masks: Subnet masks are used with IP addresses to divide a network into smaller subnetworks, or subnets. The subnet mask helps to determine the difference between the host and network portions of the IP address.
+
+Gateway: A gateway is used as a sort of doorway between different networks. The gateway helps to connect the two networks together and then directs the data to where it needs to go.
+
+DNS: Domain Name System or DNS is a system that changes domain names like www.google.com to their IP address version.
+
+Network Switch: A network switch connects different devices together and then manages the data transfer between them.
+
+Network Router: A network router is like a network switch, but it directs data based on IP addresses and is on Layer 3, whereas the network switch operates at Layer 2 (data link layer).
+
+Access Points: An access point is a piece of hardware that allows wireless-capable devices connect to a wired network.
+
+MAC address: MAC address is a unique identifier that is used at Layer 2 to identify devices on a local network. This is important so data gets sent to the right device on a wireless network.
+
+Ports: A port is an endpoint which allows a computer to send and receive information. Ports are identified by their specific number called the port number and helps to direct network traffic.
+
+Types of Networks
+WAN: Wide Area Network, as its name suggests it covers a wide area, buildings, cities, and even countries.
+LAN: Local Area Network, it is a type of network that covers a smaller area, usually a building, office or campus.
+PAN: Personal Area Network, it has the smallest range of all the networks, it is meant for immediate connectivity with personal devices like your phone and smart watch.
+MAN: Metropolitan Area Network, a type of network which spans an area like a city or large campus. It provides connectivity between different locations in the same metropolitan region.
+VPN: Virtual Private Network, it allows for secure and private communication on a public network. It creates a secure encrypted connection between the user and an external server.
+
+|Networking Commands|
+---------------------
+ifconfig: This command displays the configurations of a netowork interface, like network masks and IP adresses.
+ip: A command can be used for managing and configuring network interfaces, IP adresses, etc.
+traceroute: Traces the route that data packets take from your computer to a destination. It shows each network hop along the way.
+tracepath: Similiar to traceroute but it uses ICMP Echo Request packets exclusively, whereas traceroute uses UDP and ICMP Echo Request Packets.
+ping: This command sends an ICMP Echo request to a specefied IP address and checks if and how long it takes to reach it and come back.
+netstat: Displays different network information, like listening ports, active connections, netowork statistics, etc.
+ss: Similiar to netsat, it shows detailed information about established connections and network statistics.
+dig: This command queries DNS servers to get domain name info, such as the IP address.
+nslookup: This command also queries DNS servers to retrieve info about domain names.
+route: This command allows you to view and manipulate the IP routing table of a system, which includes modifying, adding, and deleting network routes.
+host: This command can translate domain names to IP adresses and vice versa.
+arp: Displays and can modify the Address Resolution Protocol(ARP) cache which maps IP adresses to MAC addresses
+iwconfig: Show configuration settings of a wireless network interface, like signal strength and encyption settings.
+hostname: Displays the hostname of a system, which identifies the device on a network.
+curl/wget: Downloads files from a network using protocols like HTTP, HTTPS, or FTP.
+mtr: The functionality of both ping and traceroute, monitors the network path and provides realtime statistics.
+whois: This command gets the registration information about a domain name or IP address from WHOIS databases.
+ifplugstatus: Checks if a network interface is plugged in or unplugged.
+iftop: Monitors and displays real-time data about network traffic on a network interface.
+tcpdum: Captures network traffic in real time and allows you to examine packets and their contents; used mainly for troubleshooting.
+
+
+|EXTRA|
+-------
+TCP: Transmission Control Protocol, connects using a TCP Hanshake, which is from the client, SYN(synchronize packet), server responds 
+with SYN-ACK(synchronize-acknowledge), and then sender sends ACK which completes the handshake. After that, TCP can be used for safe and secure data transfer.
+To terminate the connection, the sender sends a FIN(finish) packet. Since its more secure, TCP could be used for accessing bank info.
+
+UDP: UDP is much faster and doesn't establish a connection first. The tradeoff for this is that is much less secure, as it doesn't
+track to see if the packets makes it to the destination. UDP could be used in things where quick data transfer is necessary, like streaming, gaming, or IoT applications.
