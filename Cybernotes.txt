@@ -59,7 +59,7 @@ mtr: The functionality of both ping and traceroute, monitors the network path an
 whois: This command gets the registration information about a domain name or IP address from WHOIS databases.
 ifplugstatus: Checks if a network interface is plugged in or unplugged.
 iftop: Monitors and displays real-time data about network traffic on a network interface.
-tcpdum: Captures network traffic in real time and allows you to examine packets and their contents; used mainly for troubleshooting.
+tcpdump: Captures network traffic in real time and allows you to examine packets and their contents; used mainly for troubleshooting.
 
 
 |EXTRA|
@@ -70,3 +70,24 @@ To terminate the connection, the sender sends a FIN(finish) packet. Since its mo
 
 UDP: UDP is much faster and doesn't establish a connection first. The tradeoff for this is that is much less secure, as it doesn't
 track to see if the packets makes it to the destination. UDP could be used in things where quick data transfer is necessary, like streaming, gaming, or IoT applications.
+
+|GIT COMMANDS|
+--------------
+git init : initialize repository
+git config --global user.name "Name" : configure username
+git config --global user.emal "email@email.com" : configure email
+git status : check status, what files are tracked, untracked, etc.
+git add filename : stage file
+git add . : stage all untracked files
+git log : view log
+git checkout -b branch-name : create and switch branch
+git checkout branch-name : switch branch
+git merge branch-name : merge branches
+git branch -d branch-name : delete branch
+git restore filename : undo changes in working directory (newer versions)
+git checkout --filename : undo changes in working directory (older versions)
+git rm --cached filename : remove cached file
+git config --global alias.alias-name command : set an alias for commmand
+git tag -a v.10 -m "message" : add a tag to a commit
+git reset --soft HEAD~1 : reset commits
+git reset --hard HEAD~1 : reset commits
