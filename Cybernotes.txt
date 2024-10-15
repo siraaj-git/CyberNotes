@@ -114,6 +114,8 @@ the value John.
 
 $NAME: way to refrence the NAME variable
 
+read: get user input
+
 -eq : equal to
 
 -ne : not equal to
@@ -126,3 +128,29 @@ $NAME: way to refrence the NAME variable
 
 -ge : greater than or equal to
 
+
+Example of if statemnt
+----------------------
+if [$NUM -gt 5]; then
+        echo "Number is greater than 5"
+else
+        echo "Number is 5 or less"
+fi
+
+
+Example of for loop
+-------------------
+
+for i in 1 2 3 4 5
+do
+        echo  "Iteration $i"
+done
+
+
+Example of while loop
+---------------------
+
+while[true]
+do
+	echo "test"
+done
