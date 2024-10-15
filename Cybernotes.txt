@@ -91,3 +91,38 @@ git config --global alias.alias-name command : set an alias for commmand
 git tag -a v.10 -m "message" : add a tag to a commit
 git reset --soft HEAD~1 : reset commits
 git reset --hard HEAD~1 : reset commits
+
+|BASH SCRIPTING|
+----------------
+
+What is a Bash Script?
+----------------------
+
+A bash file is a plain text file which contains a series of
+bash commands that are executed by the bash shell.
+
+Basic Syntax
+------------
+
+#!/bin/bash : shebang line, used to tell the system to    
+use bash interpreter.
+
+echo: Basic command used to write out a word to the terminal
+
+NAME="John" : creating a variable called name, with
+the value John.
+
+$NAME: way to refrence the NAME variable
+
+-eq : equal to
+
+-ne : not equal to
+
+-lt : less than
+
+-le : less than or equal to
+
+-gt : greater than
+
+-ge : greater than or equal to
+
