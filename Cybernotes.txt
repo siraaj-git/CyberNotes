@@ -1,7 +1,7 @@
 |CyberSecurity Notes|
 ---------------------
 
-|Navigation in Linux|
+|NAVIGATION IN LINUX|
 ---------------------
 cd: Changes your current directory. To use it type: "cd path/to/directory" Typing "cd" or "cd~" will go to the home directory and "cd.." will go back one directory.
 ls: This command lists the contents of the directory you are in. Typing "ls -l" will display detailed listing and "ls -a" will show hidden files.
@@ -11,7 +11,7 @@ rmdir: Removes any EMPTY directory, to use it type: "rmdir [directory name]"
 mv: Moves a file to a specefied directory, to use it type: "mv yourfile.txt destination/of/file" Another use is to rename it by typing: "mv oldname.txt newname.txt"
 rm: Removes a file or directory, to use it type: "rm yourfile.txt" Another use is "rm -r" which deletes a specific directory and its contents, "rm -f" which removes file without confirmation.
 
-|Networking|
+|NETWORKING|
 ------------
 IP address (IPv4): An IP address is what is used by devices to connect and communicate with each other. IPv4 is a type of IP address which has 4 sets of number each separated by a period, e.g., 123.456.7.8.
 
@@ -38,7 +38,14 @@ PAN: Personal Area Network, it has the smallest range of all the networks, it is
 MAN: Metropolitan Area Network, a type of network which spans an area like a city or large campus. It provides connectivity between different locations in the same metropolitan region.
 VPN: Virtual Private Network, it allows for secure and private communication on a public network. It creates a secure encrypted connection between the user and an external server.
 
-|Networking Commands|
+TCP: Transmission Control Protocol, connects using a TCP Hanshake, which is from the client, SYN(synchronize packet), server responds 
+with SYN-ACK(synchronize-acknowledge), and then sender sends ACK which completes the handshake. After that, TCP can be used for safe and secure data transfer.
+To terminate the connection, the sender sends a FIN(finish) packet. Since its more secure, TCP could be used for accessing bank info.
+
+UDP: UDP is much faster and doesn't establish a connection first. The tradeoff for this is that is much less secure, as it doesn't
+track to see if the packets makes it to the destination. UDP could be used in things where quick data transfer is necessary, like streaming, gaming, or IoT applications.
+
+|NETWORKING COMMANDS|
 ---------------------
 ifconfig: This command displays the configurations of a netowork interface, like network masks and IP adresses.
 ip: A command can be used for managing and configuring network interfaces, IP adresses, etc.
@@ -61,15 +68,6 @@ ifplugstatus: Checks if a network interface is plugged in or unplugged.
 iftop: Monitors and displays real-time data about network traffic on a network interface.
 tcpdump: Captures network traffic in real time and allows you to examine packets and their contents; used mainly for troubleshooting.
 
-
-|EXTRA|
--------
-TCP: Transmission Control Protocol, connects using a TCP Hanshake, which is from the client, SYN(synchronize packet), server responds 
-with SYN-ACK(synchronize-acknowledge), and then sender sends ACK which completes the handshake. After that, TCP can be used for safe and secure data transfer.
-To terminate the connection, the sender sends a FIN(finish) packet. Since its more secure, TCP could be used for accessing bank info.
-
-UDP: UDP is much faster and doesn't establish a connection first. The tradeoff for this is that is much less secure, as it doesn't
-track to see if the packets makes it to the destination. UDP could be used in things where quick data transfer is necessary, like streaming, gaming, or IoT applications.
 
 |GIT COMMANDS|
 --------------
@@ -146,6 +144,7 @@ done
 
 
 |SYSTEM MONITORING|
+-------------------
 
 Why is system monitoring important?
 -----------------------------------
@@ -161,4 +160,12 @@ uptime: provide info on current time, how long the system has been running, amou
 
 dmesg: displays kernel ring buffer messages, which include system boot messages and hardware events.
 can be filtered with grep.
-journalctl: 
+journalctl: used to view systemd logs.
+journalctl -u <service_name>: for specific service
+journalctl -b: logs since boot
+journalctl -f: follow logs in real time
+
+Use cat to access various system logs such as:
+/var/log/syslog: general system log
+/var/log/auth.log: authentication log
+/var/log/kern.log: kernel log
