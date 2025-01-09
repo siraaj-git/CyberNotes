@@ -169,3 +169,22 @@ Use cat to access various system logs such as:
 /var/log/syslog: general system log
 /var/log/auth.log: authentication log
 /var/log/kern.log: kernel log
+
+Privacy and Security
+--------------------
+
+Governments: Governing body or authority responsible for enacting and enforcing laws
+Society: Group of individuals who share a common culture, values or interests
+Community: Smaller type of society
+Legislation: Laws enacted by a government
+Law vs. by-law: Laws are by government, by-laws are by local authorities
+Legal and illegal: Legal is allowed by law, illegal is prohibited by law
+Privacy: Right to control personal information and protect it from unauthorized use
+Information Security: Safeguarding digital information from unauthorized access
+Security: A broad term for protecting system, data.
+Operational Security: The proccess of protecting sensitive operation information
+Crown Company/Organization: A company controlled by the government
+Public Company/Organization: A company that is owned by the public or shareholders
+Private Company/Organization: A company or organization owned by individual or non-government entities
+Nonprofit Company/Organization: A company or organization that operates for social or charitable purpose
+Not-for-profit Company/Organization: Similiar to nonprofit, but more focused on providing services
